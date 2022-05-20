@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;700&display=swap');
+
+*, ::before, ::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    --main-font: 'Outfit', sans-serif;
+}
+
+img{
+    width: 100%;
+}
+
+
+body{
+    background-color: hsl(217, 54%, 11%);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--main-font);
+    
+}
+
+.container{
+    max-width: 1440px;
+    margin: 0.5em 1em;
+}
+
+.main{
+    max-width: 270px;
+    background-color: hsl(216, 50%, 16%);
+    color: hsl(215, 51%, 70%);
+    font-weight: 200;
+    padding: 1.2em;
+    border-radius: 0.6em;
+    font-size: 0.9rem;
+}
+
+.main-img{
+    position: relative;
+    border-radius: 0.6em;
+    height: 235px;
+    min-height: 235px;
+    cursor: pointer;
+}
+
+
+
+.main-img img{
+    border-radius: inherit;
+}
+
+.hover-state{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: inherit;
+    background-color: hsl(178, 100%, 50%);
+    opacity: 0.0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: opacity 0.5s ease-in;
+}
+
+
+.hover-img{
+    position: absolute;
+    opacity: 0;
+    width: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    transition: opacity 0.5s 0.1s ease-in;
+}
+
+.main-img:hover .hover-state{
+    opacity: 0.5;
+}
+
+.main-img:hover .hover-img{
+    opacity: 1;
+}
+
+.main h1{
+    color: hsl(0, 0%, 100%);
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-top: 0.65em;
+    cursor: pointer;
+    transition: color 0.5s ease;
+}
+
+.main h1:hover{
+    color: hsl(178, 100%, 50%);
+}
+
+.main p{
+    margin: 1em 0;
+}
+
+.info{
+    display: flex;
+    font-size: 0.75rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.ETH, .date, .user {
+    display: flex;
+    align-items: center;
+}
+
+.ETH img{
+    max-width: 0.5rem;
+    object-fit: contain;
+    margin-right: 0.3em;
+}
+
+.ETH p{
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: hsl(178, 100%, 50%);
+}
+
+.date img{
+    max-width: 1.1em;
+    object-fit: contain;
+    margin-right: 0.3em;
+}
+
+.user{
+    font-size: 0.75rem;
+    
+}
+
+.user img{
+    max-width: 2em;
+    margin-right: 0.8em;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.user a{
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    transition: color 0.3s ease;
+}
+
+.user a:hover{
+    color:hsl(178, 100%, 50%);
+}
+
+
+.horizontal-line{
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+    height: 1px;
+    margin: 0.8em 0;
+}
+
+
+
